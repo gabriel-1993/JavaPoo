@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G4E1">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="" visibility="public" xPosition="513.0" yPosition="53.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="alimento" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="alimentar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="" visibility="public" xPosition="5.0" yPosition="330.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Gato" package="" visibility="public" xPosition="357.0" yPosition="330.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Caballo" package="" visibility="public" xPosition="842.0" yPosition="330.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Caballo" target="Animal"/>
+    <IsRelation name="is" source="Gato" target="Animal"/>
+    <IsRelation name="is" source="Perro" target="Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

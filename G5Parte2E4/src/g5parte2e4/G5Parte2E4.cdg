@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G5Parte2E4">
+  <ClassDiagramComponents>
+    <Class name="Cuenta" package="" visibility="public" xPosition="52.0" yPosition="197.0">
+      <Fields>
+        <Field name="num" type="long" visibility="private"/>
+        <Field name="saldo" type="double" visibility="private"/>
+        <Field name="interesAnual" type="double" visibility="private"/>
+        <Field name="titular" type="Cliente" visibility="private"/>
+        <Field name="Movimiento" type="LinkedList" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Cuenta" returnType="void" visibility="public">
+          <Argument type="long" name="num"/>
+          <Argument type="Cliente" name="titular"/>
+        </Method>
+        <Method name="depositar" returnType="void" visibility="public">
+          <Argument type="double" name="cantidad"/>
+        </Method>
+        <Method name="extraer" returnType="void" visibility="public">
+          <Argument type="double" name="cantidad"/>
+        </Method>
+        <Method name="cambiarInteresAnual" returnType="void" visibility="public">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="verTitular" returnType="Cliente" visibility="public"/>
+        <Method name="verSaldo" returnType="double" visibility="public"/>
+        <Method name="listarMovimientos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="595.0" yPosition="58.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="localidad" type="String" visibility="private"/>
+        <Field name="fNacimiento" type="LocalDate" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Cliente" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="localidad"/>
+          <Argument type="LocalDate" name="fNacimiento"/>
+        </Method>
+        <Method name="getters" returnType="void" visibility="public"/>
+        <Method name="setters" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Movimiento" package="" visibility="public" xPosition="556.0" yPosition="415.0">
+      <Fields>
+        <Field name="fecha" type="LocalDate" visibility="private"/>
+        <Field name="tipo" type="char" visibility="private"/>
+        <Field name="importe" type="double" visibility="private"/>
+        <Field name="saldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Movimiento" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fecha"/>
+          <Argument type="char" name="tipo"/>
+          <Argument type="double" name="importe"/>
+          <Argument type="double" name="saldo"/>
+        </Method>
+        <Method name="getters" returnType="void" visibility="public"/>
+        <Method name="setters" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Cuenta" target="Movimiento" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="..." source="Cuenta" target="Cliente" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

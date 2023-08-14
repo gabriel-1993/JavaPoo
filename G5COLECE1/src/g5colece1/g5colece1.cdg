@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="g5colece1">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="" visibility="public" xPosition="693.0" yPosition="218.0">
+      <Fields>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="ciudad" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Directorio" package="" visibility="public" xPosition="373.0" yPosition="76.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

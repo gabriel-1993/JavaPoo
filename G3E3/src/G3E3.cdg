@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G3E3">
+  <ClassDiagramComponents>
+    <Class name="Auto" package="" visibility="public" xPosition="98.0" yPosition="11.0">
+      <Fields>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="patente" type="String" visibility="private"/>
+        <Field name="combustible" type="Int" visibility="private"/>
+        <Field name="dD" type="Rueda" visibility="private"/>
+        <Field name="dI" type="Rueda" visibility="private"/>
+        <Field name="tD" type="Rueda" visibility="private"/>
+        <Field name="tI" type="Rueda" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="auto" returnType="void" visibility="public"/>
+        <Method name="avanzar" returnType="void" visibility="public"/>
+        <Method name="retroceder" returnType="void" visibility="public"/>
+        <Method name="llenarTanque" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rueda" package="" visibility="public" xPosition="656.0" yPosition="102.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="presion" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="inflar" returnType="void" visibility="public"/>
+        <Method name="pinchar" returnType="void" visibility="public"/>
+        <Method name="desinflar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="agrego" source="Auto" target="Rueda" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

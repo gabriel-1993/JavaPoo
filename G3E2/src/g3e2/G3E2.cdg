@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G3E2">
+  <ClassDiagramComponents>
+    <Class name="Kiosko" package="" visibility="public" xPosition="72.0" yPosition="79.0">
+      <Fields>
+        <Field name="dire" type="String" visibility="private"/>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="cuit" type="long" visibility="private"/>
+        <Field name="e1" type="Empleado" visibility="private"/>
+        <Field name="e2" type="Empleado" visibility="private"/>
+        <Field name="e3" type="Empleado" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Kiosco" returnType="void" visibility="public"/>
+        <Method name="mayorAntig" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Empleado" package="" visibility="public" xPosition="668.0" yPosition="79.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="fechaIngreso" type="String" visibility="private"/>
+        <Field name="dni" type="long" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Empleado" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene X 3" source="Kiosko" target="Empleado" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

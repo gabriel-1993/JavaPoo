@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G4E3">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="" visibility="public" xPosition="7.0" yPosition="129.0">
+      <Fields>
+        <Field name="radio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Rectangulo" package="" visibility="public" xPosition="447.0" yPosition="120.0">
+      <Fields>
+        <Field name="base" type="int" visibility="private"/>
+        <Field name="altura" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="calculosFormas" package="" visibility="public" xPosition="226.0" yPosition="326.0">
+      <Methods>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="calcularPerimetro" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Rectangulo" target="calculosFormas"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Circulo" target="calculosFormas"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

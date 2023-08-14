@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G4EXTRA1">
+  <ClassDiagramComponents>
+    <Class name="Alquiler" package="" visibility="public" xPosition="76.0" yPosition="14.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="fechaInicio" type="LocalDate" visibility="private"/>
+        <Field name="fechaFin" type="LocalDate" visibility="private"/>
+        <Field name="posicion" type="int" visibility="private"/>
+        <Field name="barco" type="Barco" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="alquiler" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Barco" package="" visibility="public" xPosition="453.0" yPosition="52.0">
+      <Fields>
+        <Field name="matricula" type="int" visibility="private"/>
+        <Field name="eslora" type="int" visibility="private"/>
+        <Field name="anioFabricado" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="modulo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Veleros" package="" visibility="public" xPosition="295.0" yPosition="271.0">
+      <Fields>
+        <Field name="mastiles" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Yate" package="" visibility="public" xPosition="626.0" yPosition="463.0">
+      <Fields>
+        <Field name="nCamarotes" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="BarcoAmotor" package="" visibility="public" xPosition="626.0" yPosition="271.0">
+      <Fields>
+        <Field name="potenciaCV" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Yate" target="BarcoAmotor"/>
+    <IsRelation name="is" source="Veleros" target="Barco"/>
+    <IsRelation name="is" source="BarcoAmotor" target="Barco"/>
+    <UseRelation name="usa " source="Alquiler" target="Barco" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

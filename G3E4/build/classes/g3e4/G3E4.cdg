@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G3E4">
+  <ClassDiagramComponents>
+    <Class name="Hombre" package="" visibility="public" xPosition="68.0" yPosition="65.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="jugarConRobot" returnType="void" visibility="public">
+          <Argument type="Robot" name="robot"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Robot" package="" visibility="public" xPosition="620.0" yPosition="84.0">
+      <Fields>
+        <Field name="bateria" type="Bateria" visibility="private"/>
+        <Field name="duerme" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="avanzar" returnType="void" visibility="public">
+          <Argument type="int" name="pasos"/>
+        </Method>
+        <Method name="retroceder" returnType="void" visibility="public">
+          <Argument type="int" name="pasos"/>
+        </Method>
+        <Method name="dormir" returnType="void" visibility="public"/>
+        <Method name="despertar" returnType="void" visibility="public"/>
+        <Method name="recargar" returnType="void" visibility="public"/>
+        <Method name="batLlena" returnType="boolean" visibility="public"/>
+        <Method name="batVacia" returnType="boolean" visibility="public"/>
+        <Method name="energiaActual" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Bateria" package="" visibility="public" xPosition="66.0" yPosition="268.0">
+      <Fields>
+        <Field name="carga" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="bateria" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Robot" target="Bateria" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="usa" source="Hombre" target="Robot" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G3E1">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="48.0" yPosition="62.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="edad" type="Int" visibility="private"/>
+        <Field name="documento" type="Int" visibility="private"/>
+        <Field name="perro1" type="Perro" visibility="private"/>
+        <Field name="perro2" type="Perro" visibility="private"/>
+        <Field name="perro3" type="Perro" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Persona" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="Int" name="edad"/>
+          <Argument type="Int" name="documento"/>
+        </Method>
+        <Method name="adoptarPerro" returnType="void" visibility="public">
+          <Argument type="Perro" name="perro"/>
+        </Method>
+        <Method name="perroMasGrande" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Perro" package="" visibility="public" xPosition="552.0" yPosition="62.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+        <Field name="tam" type="String" visibility="private"/>
+        <Field name="edad" type="Int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Perro" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="String" name="tam"/>
+          <Argument type="int" name="edad"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="..." source="Persona" target="Perro" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

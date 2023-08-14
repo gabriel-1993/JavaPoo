@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G4E4">
+  <ClassDiagramComponents>
+    <Class name="Position" package="" visibility="public" xPosition="592.0" yPosition="88.0">
+      <Fields>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Position" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="public abstract Personaje" package="" visibility="public" xPosition="55.0" yPosition="88.0">
+      <Fields>
+        <Field name="ubicacion" type="Position" visibility="private"/>
+        <Field name="nick" type="String" visibility="private"/>
+        <Field name="vidas" type="int" visibility="private"/>
+        <Field name="energia" type="int" visibility="private"/>
+        <Field name="orientacion" type="char" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Personaje" returnType="void" visibility="public"/>
+        <Method name="disparar" returnType="void" visibility="public"/>
+        <Method name="girar" returnType="void" visibility="public"/>
+        <Method name="avanzar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Guerrero" package="" visibility="public" xPosition="592.0" yPosition="281.0">
+      <Fields>
+        <Field name="caballo" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="avanzar" returnType="void" visibility="public"/>
+        <Method name="disparar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="public abstract Personaje" target="Position" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Guerrero" target="public abstract Personaje"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
